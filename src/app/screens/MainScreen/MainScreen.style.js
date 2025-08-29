@@ -16,6 +16,7 @@ export const createMainScreenStyle = (theme) =>
     themeButton: {
       width: 40,
       alignItems: "flex-end",
+      paddingHorizontal: 6,
     },
     topBar: {
       flexDirection: "row",

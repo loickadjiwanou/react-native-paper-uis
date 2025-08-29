@@ -48,6 +48,7 @@ const MainScreen = () => {
         <Pressable
           onPress={handleToggleTheme}
           hitSlop={{ top: 5, bottom: 5, left: 5, right: 5 }}
+          style={MainScreenStyle.themeButton}
         >
           <AntDesign
             name={isDark ? "sun" : "moon"}
