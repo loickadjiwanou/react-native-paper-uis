@@ -17,7 +17,7 @@ export const createBackStyle = (theme) =>
       justifyContent: "center",
       opacity: 0.75,
     },
-    element2: {
+    themeButton: {
       width: 35,
       height: 35,
       borderRadius: 10,

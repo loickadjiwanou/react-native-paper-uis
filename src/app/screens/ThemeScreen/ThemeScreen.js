@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { ToastAndroid, View } from "react-native";
-import { Button, Text } from "react-native-paper";
+import { View } from "react-native";
+import { Button } from "react-native-paper";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { createThemeScreenStyle } from "./ThemeScreen.style";
 import Back from "../../components/Back/Back";
@@ -14,6 +14,7 @@ const ThemeScreen = () => {
       <Back title={"Theme"} />
       <View style={ThemeScreenStyle.container}>
         <Button
+          // rippleColor={}
           // disabled={true}
           compact={false}
           mode="contained"

@@ -24,6 +24,11 @@ const MainScreen = () => {
       name: "Theme",
       route: "ThemeScreen",
     },
+    {
+      id: 2,
+      name: "Activity Indicator",
+      route: "ActivityIndicatorScreen",
+    },
   ];
 
   const renderElement = ({ item }) => (
@@ -35,18 +40,13 @@ const MainScreen = () => {
     </TouchableOpacity>
   );
 
-  const handleToggleTheme = (event) => {
-    const { pageX, pageY } = event.nativeEvent;
-    toggleTheme(pageX, pageY);
-  };
-
   return (
     <View style={MainScreenStyle.view}>
       <View style={MainScreenStyle.topBar}>
         <Image source={appiconself} style={MainScreenStyle.appicon} />
         <Text style={MainScreenStyle.title}>UI Components</Text>
         <Pressable
-          onPress={handleToggleTheme}
+          onPress={() => toggleTheme()}
           hitSlop={{ top: 5, bottom: 5, left: 5, right: 5 }}
           style={MainScreenStyle.themeButton}
         >

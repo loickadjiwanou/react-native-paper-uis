@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Pressable } from "react-native";
 import { createBackStyle } from "./Back.style.js";
 import { AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
@@ -20,7 +20,17 @@ const Back = (props) => {
         <AntDesign name="left" size={18} color={theme.colors.blackWhite} />
       </TouchableOpacity>
       <Text style={BackStyle.title}>{props.title}</Text>
-      <View style={BackStyle.element2} />
+      <Pressable
+        onPress={() => toggleTheme()}
+        hitSlop={{ top: 5, bottom: 5, left: 5, right: 5 }}
+        style={BackStyle.themeButton}
+      >
+        <AntDesign
+          name={isDark ? "sun" : "moon"}
+          size={22}
+          color={theme.colors.blackWhite}
+        />
+      </Pressable>
     </View>
   );
 };

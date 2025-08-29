@@ -32,10 +32,11 @@ export const createMainScreenStyle = (theme) =>
       color: theme.colors.text,
     },
     elementButton: {
-      paddingVertical: 20,
-      backgroundColor: theme.colors.muted,
+      paddingVertical: 22,
+      backgroundColor: theme.colors.accent,
       padding: 10,
       borderRadius: theme.bordersRoundnessPlus,
+      marginBottom: 15,
     },
     elementButtonText: {
       fontSize: theme.fontSizes.big,
