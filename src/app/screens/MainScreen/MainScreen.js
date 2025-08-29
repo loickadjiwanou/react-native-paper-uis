@@ -29,6 +29,16 @@ const MainScreen = () => {
       name: "Activity Indicator",
       route: "ActivityIndicatorScreen",
     },
+    {
+      id: 3,
+      name: "App Bar",
+      route: "AppBarScreen",
+    },
+    {
+      id: 4,
+      name: "Avatar",
+      route: "AvatarScreen",
+    },
   ];
 
   const renderElement = ({ item }) => (

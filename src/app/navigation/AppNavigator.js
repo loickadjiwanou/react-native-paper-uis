@@ -5,6 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import MainScreen from "../screens/MainScreen/MainScreen";
 import ThemeScreen from "../screens/ThemeScreen/ThemeScreen";
 import ActivityIndicatorScreen from "../screens/ActivityIndicatorScreen/ActivityIndicatorScreen";
+import AppBarScreen from "../screens/AppBarScreen/AppBarScreen";
+import AvatarScreen from "../screens/AvatarScreen/AvatarScreen";
 
 const Stack = createStackNavigator();
 
@@ -21,6 +23,8 @@ const AppNavigator = () => {
           name="ActivityIndicatorScreen"
           component={ActivityIndicatorScreen}
         />
+        <Stack.Screen name="AppBarScreen" component={AppBarScreen} />
+        <Stack.Screen name="AvatarScreen" component={AvatarScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
